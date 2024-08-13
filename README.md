@@ -10,9 +10,7 @@ Sub total displayed at the bottom of the list.
 
 Any changes occuring any item of the list, will get update the sub total using context.
 
------
-#Implementation:
------
+# Implementation:
 
 Appcontext jsx file created.
 
