@@ -1,8 +1,25 @@
-# React + Vite
+# Cart page using context for quantity updates and remove option.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cart page created.
 
-Currently, two official plugins are available:
+Each item in the list will show the product with name,image,description,details, price and subtotal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Each item have the option to increase, decrease the quanity and remove item option.
+
+Sub total displayed at the bottom of the list.
+
+Any changes occuring any item of the list, will get update the sub total using context.
+
+-----
+#Implementation:
+-----
+
+Appcontext jsx file created.
+
+Using createContext Cart component wrapped in AppCxt.Provider.
+
+The root app.jsx changed to   <AppContext></AppContext>.
+
+Where ever access the update the products done using const  useContext(AppCxt)
+
+
